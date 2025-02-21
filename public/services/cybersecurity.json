@@ -1,0 +1,22 @@
+{
+    "title": "Cybersecurity",
+    "description": "Protect your business from cyber threats with our advanced security solutions. We help safeguard your data, secure your networks, and ensure compliance with industry standards.",
+    "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    "features": [
+      "Comprehensive threat detection and mitigation",
+      "Advanced network security solutions",
+      "Penetration testing and vulnerability assessment",
+      "Data encryption and privacy protection",
+      "Compliance with security regulations (GDPR, ISO, etc.)"
+    ],
+    "technologies": ["OWASP", "Nmap", "Metasploit", "Wireshark", "Cloud Security Tools"],
+    "why_choose_us": [
+      "Experienced cybersecurity professionals",
+      "Cutting-edge security practices and tools",
+      "Proactive approach to threat prevention",
+      "Security assessments to identify vulnerabilities",
+      "End-to-end protection for businesses of all sizes"
+    ],
+    "cta": "Don't leave your security to chance. Let’s build a secure future together!"
+  }
+  

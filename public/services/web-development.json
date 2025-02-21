@@ -1,0 +1,22 @@
+{
+    "title": "Web Development",
+    "description": "Transform your online presence with our custom web development services. We craft modern, high-performing, and scalable websites tailored to your business needs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "features": [
+      "Fully custom and scalable web applications",
+      "Responsive design for seamless user experience",
+      "Optimized performance for fast loading speeds",
+      "API development and third-party integrations",
+      "SEO-friendly structure for better rankings"
+    ],
+    "technologies": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Node.js", "MongoDB"],
+    "why_choose_us": [
+      "Proven expertise in modern web technologies",
+      "Client-centric approach with a focus on your goals",
+      "Ongoing support and maintenance for long-term success",
+      "Security-first development to protect your data",
+      "Competitive pricing without compromising quality"
+    ],
+    "cta": "Take your business to the next level with a high-quality, custom-built website. Contact us today!"
+  }
+  

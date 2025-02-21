@@ -1,0 +1,22 @@
+{
+    "title": "UI/UX Design",
+    "description": "We design intuitive, engaging, and visually appealing digital experiences that captivate users and drive conversions. Our designs are research-backed and user-centric.",
+    "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159",
+    "features": [
+      "User research and behavior analysis",
+      "Wireframing and interactive prototyping",
+      "Visually stunning UI with intuitive UX",
+      "Brand consistency across all platforms",
+      "Accessibility and usability best practices"
+    ],
+    "technologies": ["Figma", "Adobe XD", "Sketch", "InVision"],
+    "why_choose_us": [
+      "Designs that combine aesthetics with functionality",
+      "User-first approach for improved engagement",
+      "Collaboration with clients to refine vision",
+      "Seamless integration with development processes",
+      "Data-driven approach for optimized UX"
+    ],
+    "cta": "Let’s craft an exceptional user experience that sets your brand apart. Get in touch today!"
+  }
+  

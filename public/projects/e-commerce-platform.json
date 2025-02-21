@@ -1,0 +1,29 @@
+{
+    "title": "E-Commerce Platform",
+    "date": "2025-02-21",
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1557821552-17105176677c",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This e-commerce platform is built with Next.js, offering a seamless shopping experience with modern UI and fast performance."
+      },
+      {
+        "type": "heading",
+        "text": "Features"
+      },
+      {
+        "type": "paragraph",
+        "text": "The platform includes product management, a cart system, Stripe payment integration, and a secure authentication system."
+      },
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+      },
+      {
+        "type": "paragraph",
+        "text": "With a responsive design and powerful admin panel, managing products and orders is easier than ever."
+      }
+    ]
+  }
+  
