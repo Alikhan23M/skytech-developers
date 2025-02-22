@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { MobileNav } from "@/components/mobile-nav";
+import Image from "next/image";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -39,8 +40,7 @@ export function Navbar() {
       <div className="container flex h-16 items-center">
        
         <Link href="/" className="flex items-center space-x-2">
-          <Laptop2 className="h-6 w-6 text-primary" />
-          <span className="font-bold text-xl">SkyTech</span>
+          <Image src={"/logo.png"} alt="logo" width={130} height={70}/>
         </Link>
         <NavigationMenu className="mx-6 hidden md:flex">
           <NavigationMenuList>
@@ -83,9 +83,9 @@ export function Navbar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/blog" legacyBehavior passHref>
+              <Link href="/blogs" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Blog
+                  Blogs
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>

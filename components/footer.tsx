@@ -45,10 +45,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services/cybersecurity"
+                  href="/services/aritificial-intelligence"
                   className="text-sm text-muted-foreground hover:text-foreground"
                 >
-                  Cybersecurity
+                  Artificial Intelligence
                 </Link>
               </li>
             </ul>
@@ -74,10 +74,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/blog"
+                  href="/blogs"
                   className="text-sm text-muted-foreground hover:text-foreground"
                 >
-                  Blog
+                  Blogs
                 </Link>
               </li>
               <li>
@@ -105,7 +105,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/company/skytech"
+                  href="https://linkedin.com/company/skytech-developers"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground"
@@ -121,6 +121,16 @@ export function Footer() {
                   className="text-sm text-muted-foreground hover:text-foreground"
                 >
                   GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://facebook.com/skytech-developer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground"
+                >
+                  Facebook
                 </a>
               </li>
             </ul>
