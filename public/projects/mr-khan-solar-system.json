@@ -1,0 +1,59 @@
+{
+    "title": "Mr. Khan Solar System",
+    "date": "2025-02-21",
+    "category": "Portfolio",
+    "image": "/images/projects/mr-khan-solar-system.JPG",
+    "keywords": [
+      "skytech developers projects","skytech developers","mr khan solar system", "solar system project","solar system website","web dev agency in pakistan","software agency in pakistan"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Mr. Khan Solar System is a comprehensive portfolio website designed to showcase high-quality solar energy projects. Built using React.js and Tailwind CSS, this website provides an elegant and engaging platform for clients to explore past work, view project details, and connect with the company."
+      },
+      {
+        "type": "heading",
+        "text": "Features"
+      },
+      {
+        "type": "paragraph",
+        "text": "The website is designed to be visually appealing, user-friendly, and optimized for performance. It includes several advanced features to enhance user engagement and provide an immersive browsing experience."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Clean and Modern UI – A sleek, well-structured design that highlights the company’s projects effectively.",
+          "Fully Responsive – The website adapts seamlessly to different screen sizes, ensuring a smooth experience on mobile, tablet, and desktop devices.",
+          "SEO Optimized – Built with SEO best practices to improve search engine rankings and increase online visibility.",
+          "High Performance – Optimized for fast loading speeds and smooth animations.",
+          "Project Showcase – Each project is presented with high-quality images, descriptions, and interactive elements.",
+          "Cursor-Following Hover Effects – Dynamic hover animations on project cards that follow the user's cursor, providing an engaging experience.",
+          "Video Integration – Projects include embedded videos to give visitors an in-depth look at completed solar installations.",
+          "Smooth Animations – Subtle motion effects and transitions enhance the website’s interactive experience."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Technology Stack"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Frontend: React.js with Tailwind CSS for a responsive and modern user interface.",
+          "Animations: Framer Motion for smooth and interactive animations.",
+          "SEO Optimization: Meta tags and structured data to enhance search engine ranking.",
+          "Performance Enhancements: Lazy loading and code splitting for improved page speed.",
+          "Hosting: Deployed on a high-performance cloud platform."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Conclusion"
+      },
+      {
+        "type": "paragraph",
+        "text": "Mr. Khan Solar System portfolio website serves as a powerful digital presence for showcasing solar energy projects. With a high-performance design, engaging animations, and seamless user experience, it effectively communicates the company's expertise and attracts potential clients. Whether viewed on a desktop or mobile device, the site ensures a visually appealing and informative experience for visitors."
+      }
+    ]
+  }
+  

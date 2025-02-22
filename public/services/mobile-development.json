@@ -1,7 +1,16 @@
 {
     "title": "Mobile Development",
     "description": "Unlock the power of mobile with high-performance applications built for iOS and Android. Our mobile solutions enhance engagement and provide a seamless experience.",
-    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "image": "/images/services/appdev.jpeg",
+    "keywords": [
+    "Mobile app development", "custom mobile applications", "Android app development",
+    "iOS app development", "cross-platform mobile apps", "React Native development",
+    "Flutter app development", "hybrid app development", "mobile UI/UX design",
+    "SkyTech Developers mobile solutions", "app performance optimization", "native mobile apps",
+    "business mobile applications", "e-commerce mobile apps", "mobile app testing",
+    "custom mobile software", "PWA mobile apps", "enterprise mobile applications"
+]
+,
     "features": [
       "Native and cross-platform mobile applications",
       "Optimized for smooth performance on all devices",

@@ -1,7 +1,17 @@
 {
     "title": "UI/UX Design",
     "description": "We design intuitive, engaging, and visually appealing digital experiences that captivate users and drive conversions. Our designs are research-backed and user-centric.",
-    "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159",
+    "image": "/images/services/uiux.jpg",
+    "keywords": [
+    "UI/UX design", "modern UI design", "creative UX solutions",
+    "user interface design", "user experience design", "website UI/UX",
+    "mobile app UI/UX", "wireframing and prototyping", "Figma UI design",
+    "Adobe XD design", "responsive web design", "interaction design",
+    "SkyTech Developers UI services", "UX research and analysis",
+    "usability testing", "accessibility design", "design system development",
+    "branding and visual identity", "high-fidelity UI prototypes"
+]
+,
     "features": [
       "User research and behavior analysis",
       "Wireframing and interactive prototyping",

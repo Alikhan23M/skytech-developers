@@ -11,17 +11,23 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'SkyTech Developers | Home',
   description: 'Leading software development agency specializing in web development, mobile apps, UI/UX design, and cybersecurity solutions.',
-  keywords: 'SkyTech Developers, software development, web development, mobile apps, UI/UX design, cybersecurity, IT consulting, website for buisness',
+  keywords: 'SkyTech Developers, software development, web development, mobile apps, UI/UX design, cybersecurity, IT consulting, business websites, SaaS development, e-commerce solutions, cloud computing, software engineering, technology services',
+  icons: {
+    icon: "/images/icons/favicon.ico", 
+    shortcut: "/images/icons/favicon-16x16.png", 
+    apple: "/images/icons/apple-touch-icon.png", 
+},
   openGraph: {
     title: 'SkyTech Developers - Modern Software Solutions Agency',
     description: 'Leading software development agency specializing in web development, mobile apps, UI/UX design, and cybersecurity solutions.',
-    url: 'https://skytech-developers.com',
+    url: 'https://skytech-developers.vercel.app',
     siteName: 'SkyTech Developers',
     images: [
       {
-        url: 'https://skytech-developers.com/og-image.jpg',
+        url: '/logo.png',
         width: 1200,
         height: 630,
+        alt: 'SkyTech Developers Logo',
       },
     ],
     locale: 'en_US',
@@ -31,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'SkyTech Developers - Modern Software Solutions Agency',
     description: 'Leading software development agency specializing in web development, mobile apps, UI/UX design, and cybersecurity solutions.',
-    images: ['https://skytech-developers.com/og-image.jpg'],
+    images: ['/logo.png'],
   },
 };
 
@@ -45,7 +51,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >

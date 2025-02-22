@@ -1,50 +1,26 @@
 [
     {
-      "title": "E-Commerce Platform",
+      "title": "Anabeua Collection",
       "description":
-        "A modern e-commerce platform built with Next.js and Stripe integration.",
-      "image": "https://images.unsplash.com/photo-1557821552-17105176677c",
+        "A modern e-commerce platform built with MERN Stack & Tailwind css.",
+      "image": "/images/projects/anabeya-collection.JPG",
       "category": "Web Development",
-      "link": "/e-commerce-platform"
+      "link": "/anabeya-collection"
     },
     {
-      "title": "Healthcare App",
+      "title": "Mr Khan Solar System",
       "description":
-        "Mobile application for healthcare providers to manage patient records.",
-      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d",
-      "category": "Mobile Development",
-      "link": "/healthcare-app"
-    },
-    {
-      "title": "Financial Dashboard",
-      "description":
-        "Real-time financial analytics dashboard with advanced data visualization.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-      "category": "UI/UX Design",
-      "link": "/financial-dashboard"
-    },
-    {
-      "title": "Social Media Platform",
-      "description":
-        "Feature-rich social media platform with real-time messaging and content sharing.",
-      "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7",
+        "A modren Portfolio website built with React js and Tailwind css",
+      "image": "/images/projects/mr-khan-solar-system.JPG",
       "category": "Web Development",
-      "link": "/social-media-platform"
+      "link": "/mr-khan-solar-system"
     },
     {
-      "title": "Fitness Tracking App",
+      "title": "Karimi Products Logo",
       "description":
-        "Cross-platform mobile app for tracking workouts and nutrition.",
-      "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8",
-      "category": "Mobile Development",
-      "link": "/fitness-tracking-app"
-    },
-    {
-      "title": "Restaurant Management System",
-      "description":
-        "Comprehensive system for managing restaurant operations and online orders.",
-      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
-      "category": "Web Development",
-      "link": "/restaurant-management-system"
+        "A stylish logo for Karimi products to enhance their visual appearance.",
+      "image": "/images/projects/Karimi-products.png",
+      "category": "Graphics Designing",
+      "link": "/Karimi-products-logo"
     }
   ]

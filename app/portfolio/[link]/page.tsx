@@ -18,9 +18,9 @@ export default async function ProjectPage({ params }: { params: { link: string }
     const project = JSON.parse(fileContents);
 
     return (
-      <article className="max-w-4xl mx-auto py-16 px-6 lg:px-0">
+      <article className="max-w-5xl mx-auto md:py-16 sm:px-6">
         {/* Project Title */}
-        <h1 className="text-5xl text-center font-bold text-gray-900 dark:text-white">{project.title}</h1>
+        <h1 className="text-3xl md:text-5xl text-center font-bold text-gray-900 dark:text-white">{project.title}</h1>
 
         {/* Project Metadata */}
         <p className="text-md text-gray-500 dark:text-gray-400 mt-2 text-center">
@@ -33,7 +33,7 @@ export default async function ProjectPage({ params }: { params: { link: string }
           alt={project.title}
           width={900}
           height={500}
-          className="my-6 rounded-lg shadow-lg"
+          className="my-6 rounded-lg shadow-lg mx-auto"
         />
 
         {/* Project Content */}
@@ -41,11 +41,12 @@ export default async function ProjectPage({ params }: { params: { link: string }
           {project.content.map((block: any, index: number) => {
             if (block.type === "paragraph") return <p key={index} className="text-lg">{block.text}</p>;
 
-            if (block.type === "heading") return (
-              <h2 key={index} className="text-2xl font-bold text-gray-800 dark:text-white mt-8">
-                {block.text}
-              </h2>
-            );
+            if (block.type === "heading")
+              return (
+                <h2 key={index} className="text-2xl font-bold text-gray-800 dark:text-white mt-8">
+                  {block.text}
+                </h2>
+              );
 
             if (block.type === "image")
               return (
@@ -53,10 +54,19 @@ export default async function ProjectPage({ params }: { params: { link: string }
                   key={index}
                   src={block.url}
                   alt="Project Image"
-                  width={800}
-                  height={400}
-                  className="my-6 rounded-lg shadow-md"
+                  width={700}
+                  height={350}
+                  className="my-6 rounded-lg shadow-md mx-auto"
                 />
+              );
+
+            if (block.type === "list")
+              return (
+                <ul key={index} className="list-disc list-inside mt-4 text-lg text-gray-900 dark:text-gray-100">
+                  {block.items.map((item: string, itemIndex: number) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
               );
 
             return null;

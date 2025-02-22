@@ -1,0 +1,77 @@
+{
+  "title": "Anabeya Collection",
+  "date": "2025-02-21",
+  "category": "E-Commerce",
+  "image": "/images/projects/anabeya-collection.JPG",
+  "keywords": [
+      "skytech developers projects","skytech developers","E-commerece plateform", "online shoping","ecommerce web app with nextjs","ecommerce site with MERN stack","ecommerce website project"
+    ],
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Anabeya Collection is a feature-rich, full-stack e-commerce web application built using the MERN (MongoDB, Express.js, React, Node.js) stack and styled with Tailwind CSS. Designed for scalability and performance, the platform offers a seamless online shopping experience with an intuitive UI and optimized backend architecture."
+    },
+    {
+      "type": "heading",
+      "text": "Features"
+    },
+    {
+      "type": "paragraph",
+      "text": "This e-commerce platform comes equipped with essential and advanced features to enhance user experience and streamline store management."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Product Management – Admins can easily add, edit, and remove products with images, descriptions, and pricing details.",
+        "Shopping Cart & Checkout – Users can add products to their cart, update quantities, and proceed to a smooth checkout process.",
+        "Secure Authentication – Users can register and log in securely using JWT-based authentication.",
+        "Order Management – Customers can view their order history, and admins can update order statuses (processing, shipped, delivered).",
+        "Responsive Design – The platform is fully responsive, ensuring a smooth experience on both desktop and mobile devices.",
+        "Search & Filters – Users can easily find products using search functionality and category-based filters.",
+        "Real-Time Stock Updates – Inventory levels are updated dynamically as purchases are made.",
+        "SEO Optimization – The site is optimized for search engines to improve visibility and reach."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Admin Panel"
+    },
+    {
+      "type": "paragraph",
+      "text": "Anabeya Collection includes a powerful admin panel that enables store owners to efficiently manage their e-commerce operations. Admins have full control over products, orders, and customers."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Dashboard Overview – A clean dashboard providing insights into total orders, revenue, and customer activity.",
+        "Product Management – Admins can create, edit, and delete products with ease.",
+        "Order Processing – Orders can be tracked, updated, and marked as completed.",
+        "User Management – Admins can view customer details and manage user access.",
+        "Performance Analytics – Insights into sales, popular products, and customer trends."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Technology Stack"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Frontend: React.js with Tailwind CSS for a modern and responsive UI.",
+        "Backend: Node.js with Express.js for handling server-side logic.",
+        "Database: MongoDB for efficient data storage and retrieval.",
+        "Authentication: JWT (JSON Web Tokens) for secure user login and session management.",
+        "State Management: Context API for managing global state.",
+        "Deployment: Hosted on a scalable cloud platform for optimal performance."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Anabeya Collection is a robust e-commerce platform built for efficiency, security, and scalability. With an intuitive user experience, advanced admin panel, and seamless shopping flow, it provides everything needed for a successful online store. Whether you're a small business or an enterprise, this platform ensures a smooth digital shopping experience."
+    }
+  ]
+}

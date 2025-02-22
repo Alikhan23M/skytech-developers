@@ -15,18 +15,34 @@ export async function generateMetadata({ params }: { params: { service: string }
 
         const fileContents = fs.readFileSync(filePath, "utf-8");
         const service = JSON.parse(fileContents);
+        
+        // ✅ Ensure keywords are properly formatted
+        const keywords = Array.isArray(service.keywords) 
+            ? service.keywords.join(", ") 
+            : "SkyTech Developers, web development, programming, tech solutions, software solutions";
 
         return {
-            title: `SkyTech Developers Services | ${service.title}`,
-            description: service.description || `Discover our expert services in ${service.title}.`,
-            keywords: `${service.keywords || "SkyTech Developers, web development, software solutions, IT services, technology"}`,
-           
+            title: `SkyTech Developers | ${service.title}`,
+            description: service.description || `Explore our expert ${service.title} services.`,
+            keywords: keywords,
+            
             openGraph: {
                 title: service.title,
                 description: service.description || "Explore the best services provided by SkyTech Developers.",
-                images: [{ url: service.image, alt: service.title }],
+                url: `https://skytech-developers.vercel.app/services/${params.service}`,
+                images: [{ 
+                    url: service.image || "/images/logo.png", // ✅ Use `logo.png` as the default
+                    alt: service.title 
+                }],
                 type: "website",
                 siteName: "SkyTech Developers",
+            },
+
+            twitter: {
+                card: "summary_large_image",
+                title: service.title,
+                description: service.description || "SkyTech Developers offers high-quality services.",
+                images: [service.image || "/images/logo.png"], // ✅ Use default logo if no image is provided
             },
         };
     } catch (error) {
@@ -36,9 +52,5 @@ export async function generateMetadata({ params }: { params: { service: string }
 }
 
 export default function ServiceLayout({ children }: { children: React.ReactNode }) {
-    return (
-        <div className="container mx-auto px-4 py-6">
-            {children}
-        </div>
-    );
+    return <div>{children}</div>;
 }

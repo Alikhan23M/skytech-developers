@@ -5,55 +5,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Target, Heart } from "lucide-react";
 import { motion } from "framer-motion";
+import GenralHero from "@/components/GenralHero";
 
 export default function AboutPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section
-        className=" relative py-20 md:py-32"
-      >
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.8 }}
-          className="absolute inset-0">
-          <Image
-            src="/images/bg.jpg"
-            alt="Hero Image"
-            layout="fill"
-            objectFit="cover"
-          />
-        </motion.div>
-        {/* add blur  */}
-        <div className="absolute inset-0 bg-black bg-opacity-70" />
-        {/* add gradient */}
-        <div className="absolute inset-0 hero-gradient" />
-        <div className="relative container text-center max-w-3xl mx-auto">
-          <motion.h1 
-           initial={{ opacity: 0,y:50 }}
-           whileInView={{ opacity: 1,y:0 }}
-           viewport={{once:false}}
-           transition={{ duration: 0.8,delay:0.2 }}
-          className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
-            About SkyTech Developers
-          </motion.h1>
-          <motion.p 
-           initial={{ opacity: 0,y:50 }}
-           whileInView={{ opacity: 1,y:0 }}
-           viewport={{once:false}}
-           transition={{ duration: 0.8,delay:0.8 }}
-          className="text-xl mb-8 text-white">
-            We're a team of passionate developers and designers dedicated to
-            creating exceptional digital experiences that drive business growth.
-          </motion.p>
-        </div>
-      </section>
+    {/* Hero section */}
+    
+     <GenralHero heading="About Sky Tech Developers" para="We're a team of passionate developers and designers dedicated to
+          creating exceptional digital experiences that drive business growth."/>
 
       {/* Mission & Vision */}
       <section className="py-20 bg-muted/50">
-        <div className="container grid md:grid-cols-2 gap-12">
+        <div className="px-4 sm:container grid md:grid-cols-2 gap-12">
           {[{ title: "Our Mission", icon: Target, text: "To empower businesses with innovative digital solutions." },
           { title: "Our Vision", icon: Heart, text: "To be the leading software development agency." }].map((item, index) => (
             <motion.div
@@ -63,8 +27,8 @@ export default function AboutPage() {
               viewport={{ once: false }}
               transition={{ duration: 0.8 }}
             >
-              <Card className="p-8">
-                <item.icon className="h-12 w-12 text-primary mb-6" />
+              <Card className="py-8 px-6 flex flex-col">
+                <item.icon className="h-12 w-12 text-primary mb-6 self-center" />
                 <h2 className="text-2xl font-bold mb-4">{item.title}</h2>
                 <p className="text-muted-foreground">{item.text}</p>
               </Card>
@@ -75,7 +39,7 @@ export default function AboutPage() {
 
       {/* Core Values */}
       <section className="py-20">
-        <div className="container text-center">
+        <div className="px-4 sm:container text-center">
           <h2 className="text-3xl font-bold mb-12">Our Core Values</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {["Excellence", "Innovation", "Integrity"].map((value, index) => (
@@ -98,7 +62,7 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <section className="py-20 bg-muted/50">
-        <div className="container text-center">
+        <div className="px-4 sm:container text-center">
           <motion.h2 
           initial={{ opacity: 0, scale: 0.7 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -133,7 +97,7 @@ export default function AboutPage() {
 
       {/* CTA Section */}
       <motion.section
-        className="py-20 text-center"
+        className="py-20 text-center px-4"
         initial={{ opacity: 0, y: 50,scale:0.7 }}
         whileInView={{ opacity: 1, y: 0,scale:1 }}
         viewport={{ once: false }}

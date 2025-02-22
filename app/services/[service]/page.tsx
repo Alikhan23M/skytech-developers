@@ -24,13 +24,13 @@ export default async function ServicePage({ params }: { params: { service: strin
   }
 
   return (
-    <section className="py-20 px-8 md:px-20">
+    <section className="py-20 px-8 sm:px-14 md:px-20">
       {/* Service Title and Description */}
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-bold">{service.title}</h1>
+        <h1 className="text-3xl md:text-6xl font-bold">{service.title}</h1>
         <p className="text-xl text-muted-foreground mt-4">{service.description}</p>
         <div className="relative w-full aspect-video mt-8">
-          <Image src={service.image} alt={service.title} fill className="object-cover rounded-lg" />
+          <Image src={service.image} alt={service.title} fill className="object-cover rounded-lg mx-auto" />
         </div>
       </div>
 
@@ -67,7 +67,7 @@ export default async function ServicePage({ params }: { params: { service: strin
       </div>
 
       {/* CTA Section */}
-      <div className="max-w-3xl mx-auto mt-12 text-center bg-gray-100 dark:bg-gray-800 p-8 rounded-lg">
+      <div className="max-w-3xl mx-auto mt-12 text-center bg-gray-100 dark:bg-gray-800 py-8 px-4 md:px-8 rounded-lg">
         <h2 className="text-2xl font-semibold text-primary">{service.cta}</h2>
         <Button asChild className="mt-6">
           <a href="/contact">Get Started</a>

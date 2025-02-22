@@ -1,7 +1,16 @@
 {
     "title": "Web Development",
     "description": "Transform your online presence with our custom web development services. We craft modern, high-performing, and scalable websites tailored to your business needs.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "image": "/images/services/webdev.webp",
+    "keywords": [
+    "Web development", "custom web solutions", "modern website development",
+    "responsive web design", "frontend development", "backend development",
+    "full-stack development", "MERN stack development", "Next.js web apps",
+    "e-commerce website development", "business websites", "portfolio websites",
+    "SkyTech Developers web services", "SEO-friendly web development", "web performance optimization",
+    "CMS development", "WordPress development", "progressive web apps (PWA)"
+]
+,
     "features": [
       "Fully custom and scalable web applications",
       "Responsive design for seamless user experience",

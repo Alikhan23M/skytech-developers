@@ -3,24 +3,24 @@
     "title": "Web Development",
     "href": "/services/web-development",
     "description": "Custom web applications built with modern technologies.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    "image": "/images/services/webdev.webp"
   },
   {
     "title": "Mobile Development",
     "href": "/services/mobile-development",
     "description": "Native and cross-platform mobile applications.",
-    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    "image": "/images/services/appdev.jpeg"
   },
   {
     "title": "UI/UX Design",
     "href": "/services/ui-ux-design",
     "description": "User-centered design solutions for digital products.",
-    "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159"
+    "image": "/images/services/uiux.jpg"
   },
   {
-    "title": "Cybersecurity",
-    "href": "/services/cybersecurity",
+    "title": "Artificial Initelligence",
+    "href": "/services/aritificial-intelligence",
     "description": "Comprehensive security solutions for your business.",
-    "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1"
+    "image": "/images/services/ai.jpg"
   }
 ]

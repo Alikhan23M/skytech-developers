@@ -1,0 +1,29 @@
+{
+  "title": "Artificial Intelligence",
+  "description": "Leverage the power of Artificial Intelligence to automate tasks, enhance decision-making, and drive innovation. Our AI solutions are tailored to optimize business processes and improve efficiency.",
+  "image": "/images/services/ai.jpg",
+  "keywords": [
+    "Artificial Intelligence", "AI solutions", "AI development",
+    "machine learning services", "deep learning applications", "AI-powered software",
+    "intelligent automation", "AI consulting", "custom AI solutions",
+    "SkyTech Developers AI services", "AI-driven web applications", "AI in business",
+    "predictive analytics", "natural language processing (NLP)", "computer vision development"
+]
+,
+  "features": [
+    "Custom AI models for automation and analytics",
+    "Machine learning solutions for data-driven insights",
+    "Natural Language Processing (NLP) for chatbots and sentiment analysis",
+    "Computer vision for image recognition and object detection",
+    "AI-powered predictive analytics for better forecasting"
+  ],
+  "technologies": ["Python", "TensorFlow", "PyTorch", "OpenAI", "Scikit-learn", "NLP", "Computer Vision"],
+  "why_choose_us": [
+    "Expertise in cutting-edge AI technologies",
+    "Tailored AI solutions to meet your specific needs",
+    "Scalable and efficient models for real-world applications",
+    "Seamless integration with existing systems",
+    "Ethical AI development with a focus on data security"
+  ],
+  "cta": "Unlock the potential of AI for your business. Contact us today to explore innovative AI solutions!"
+}

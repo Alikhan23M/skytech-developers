@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import {motion} from 'framer-motion';
+import GenralHero from "@/components/GenralHero";
 export default function ServicesPage() {
   const [services, setServices] = useState([]);
 
@@ -21,52 +22,12 @@ export default function ServicesPage() {
   return (
     <>
        {/* Hero Section */}
-     <section className="relative py-20 md:py-32 text-center">
-     <motion.div
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
-               viewport={{once:false}}
-               transition={{ duration: 0.8 }}
-               className="absolute inset-0">
-               <Image
-                 src="/images/bg.jpg"
-                 alt="Hero Image"
-                 layout="fill"
-                 objectFit="cover"
-               />
-             </motion.div>
-             {/* add blur  */}
-             <div className="absolute inset-0 bg-black bg-opacity-70" />
-             {/* add gradient */}
-        <div className="absolute inset-0 hero-gradient" />
 
-        <div className="container relative">
-          <div className="max-w-3xl mx-auto text-center">
-            <motion.h1
-              initial={{ opacity: 0,y:50 }}
-              whileInView={{ opacity: 1,y:0 }}
-              viewport={{once:false}}
-              transition={{ duration: 0.8,delay:0.2 }}
-              
-              className="hero-heading text-4xl md:text-6xl font-bold mb-6 gradient-text">
-              Our Services
-            </motion.h1>
+    <GenralHero heading="Our Services" para=" Explore our professional services designed to help your business grow."/>
 
-            <motion.p
-            initial={{ opacity: 0,y:50 }}
-            whileInView={{ opacity: 1,y:0 }}
-            viewport={{once:false}}
-            transition={{ duration: 0.8,delay:0.8 }}
-              className="hero-para text-xl mb-8 text-white">
-              Explore our professional services designed to help your business grow.
-            </motion.p>
-           
-          </div>
-          </div>
-      </section>
-
+    
       {/* Services Grid */}
-      <section className="py-20 px-8 md:px-10">
+      <section className="py-20 px-4 sm:px-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service: any, index: number) => (
             <motion.div

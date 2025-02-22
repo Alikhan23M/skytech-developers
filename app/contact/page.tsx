@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import {
   MapPin,
   Phone,
@@ -13,124 +13,145 @@ import {
   Twitter,
   Github,
 } from "lucide-react";
+import GenralHero from "@/components/GenralHero";
+import { useState } from "react";
 
 export default function ContactPage() {
+
+  const [formData, setFormData] = useState({ Fname: '', Sname: '', email: '', message: '' });
+  const [messageSent, setMessageSent] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [isSending, setIsSending] = useState(false);  // New state for tracking sending status
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    setIsSending(true);  // Set sending state to true
+
+    const formDataObject = new FormData();
+    formDataObject.append('service_id', 'nexskyofficial@gmail.com');
+    formDataObject.append('template_id', 'template_csav9no');
+    formDataObject.append('user_id', 'yDwZwZ-kAczpTpQNw');
+    formDataObject.append('from_name', `${formData.Fname} ${formData.Sname}`.trim());
+    formDataObject.append('reply_to', formData.email);
+    formDataObject.append('message', formData.message);
+
+    try {
+      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
+        method: 'POST',
+        body: formDataObject,
+      });
+
+      if (response.ok) {
+        setMessageSent(true);
+        setErrorMessage('');
+        setFormData({ Fname: '', Sname: '', email: '', message: '' });
+        setTimeout(() => setMessageSent(false), 3000);
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setErrorMessage('Oops... Something went wrong. Please try again later.');
+    } finally {
+      setIsSending(false);  // Reset sending state
+    }
+  };
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 text-center">
-     <motion.div
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
-               viewport={{once:false}}
-               transition={{ duration: 0.8 }}
-               className="absolute inset-0">
-               <Image
-                 src="/images/bg.jpg"
-                 alt="Hero Image"
-                 layout="fill"
-                 objectFit="cover"
-               />
-             </motion.div>
-             {/* add blur  */}
-             <div className="absolute inset-0 bg-black bg-opacity-70" />
-             {/* add gradient */}
-        <div className="absolute inset-0 hero-gradient" />
 
-        <div className="container relative">
-          <div className="max-w-3xl mx-auto text-center">
-            <motion.h1
-              initial={{ opacity: 0,y:50 }}
-              whileInView={{ opacity: 1,y:0 }}
-              viewport={{once:false}}
-              transition={{ duration: 0.8,delay:0.2 }}
-              
-              className="hero-heading text-4xl md:text-6xl font-bold mb-6 gradient-text">
-              Contact Us
-            </motion.h1>
-
-            <motion.p
-            initial={{ opacity: 0,y:50 }}
-            whileInView={{ opacity: 1,y:0 }}
-            viewport={{once:false}}
-            transition={{ duration: 0.8,delay:0.8 }}
-              className="hero-para text-xl mb-8 text-white">
-             Have a project in mind? Let's discuss how we can help bring your vision to life.
-            </motion.p>
-           
-          </div>
-          </div>
-      </section>
+      <GenralHero heading="Contact Us" para=" Have a project in mind? Let's discuss how we can help bring your vision to life." />
 
       {/* Contact Form & Info */}
       <section className="py-20">
-        <div className="container">
+        <div className="px-4 sm:container">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <motion.div 
-            initial={{ opacity: 0, x:-40 }}
-            whileInView={{ opacity: 1,x:0 }}
-            viewport={{once:false}}
-            transition={{ duration: 0.8 }}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.8 }}
             >
-            <Card className="p-8">
-              <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
+              <Card className="p-8">
+                <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
+                <form className="space-y-6" onSubmit={handleSubmit}>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-sm font-medium mb-2 block">
+                        First Name
+                      </label>
+                      <input
+                        name="Fname"
+                        value={formData.Fname}
+                        onChange={handleChange}
+                        type="text"
+                        className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium mb-2 block">
+                        Last Name
+                      </label>
+                      <input
+                        name="Sname"
+                        value={formData.Sname}
+                        onChange={handleChange}
+                        type="text"
+                        className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                        required
+                      />
+                    </div>
+                  </div>
                   <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      First Name
-                    </label>
+                    <label className="text-sm font-medium mb-2 block">Email</label>
                     <input
-                      type="text"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      type="email"
                       className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                       required
                     />
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">
-                      Last Name
+                      Message
                     </label>
-                    <input
-                      type="text"
+                    <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={6}
                       className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                       required
-                    />
+                    ></textarea>
                   </div>
-                </div>
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Email</label>
-                  <input
-                    type="email"
-                    className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="text-sm font-medium mb-2 block">
-                    Message
-                  </label>
-                  <textarea
-                    rows={6}
-                    className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                    required
-                  ></textarea>
-                </div>
-                <Button type="submit" className="w-full">
-                  Send Message
-                  <Send className="ml-2 h-4 w-4" />
-                </Button>
-              </form>
-            </Card>
+                  <Button type="submit" className="w-full">
+                    Send Message
+                    <Send className="ml-2 h-4 w-4" />
+                  </Button>
+                  {/* Status Messages */}
+                  {isSending && <p className="text-sm text-blue-500 mt-2">Sending...</p>}
+                  {messageSent && <p className="text-sm text-green-500 mt-2">Message sent successfully!</p>}
+                  {errorMessage && <p className="text-sm text-red-500 mt-2">{errorMessage}</p>}
+                </form>
+              </Card>
             </motion.div>
 
             {/* Contact Information */}
             <motion.div
-            initial={{ opacity: 0, x:40 }}
-            whileInView={{ opacity: 1,x:0 }}
-            viewport={{once:false}}
-            transition={{ duration: 0.8 }}
-            className="space-y-8">
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.8 }}
+              className="space-y-8">
               <Card className="p-8">
                 <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                 <div className="space-y-6">
@@ -139,9 +160,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium">Address</h3>
                       <p className="text-muted-foreground">
-                        123 Tech Street, Silicon Valley
+                        Mardan KPK
                         <br />
-                        CA 94025, United States
+                        Pakistan
                       </p>
                     </div>
                   </div>
@@ -149,15 +170,15 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6 text-primary shrink-0" />
                     <div>
                       <h3 className="font-medium">Phone</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground hover:underline transition-colors duration-300 "><a href="tel:+923429327224">+92 342 9327224</a></p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
                     <Mail className="h-6 w-6 text-primary shrink-0" />
                     <div>
                       <h3 className="font-medium">Email</h3>
-                      <p className="text-muted-foreground">
-                        contact@skytech.com
+                      <p className="text-muted-foreground hover:underline transition-colors duration-300">
+                        <a href="mailto:skytechdevelopers.official@gmail.com">skytechdevelopers.official@gmail.com</a>
                       </p>
                     </div>
                   </div>
@@ -179,7 +200,7 @@ export default function ContactPage() {
                 <h2 className="text-2xl font-bold mb-6">Connect With Us</h2>
                 <div className="flex space-x-4">
                   <a
-                    href="https://linkedin.com/company/skytech"
+                    href="https://linkedin.com/company/skytech-developers"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
