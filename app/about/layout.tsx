@@ -12,7 +12,7 @@ export const metadata = {
         siteName: "SkyTech Developers",
         images: [
             {
-                url: "/images/logo.png", // Since you want to use logo.png from public directory
+                url: "https://skytech-developers.vercel.app/images/logo.png", // Since you want to use logo.png from public directory
                 width: 1200,
                 height: 630,
                 alt: "SkyTech Developers Logo",
@@ -25,7 +25,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "About SkyTech Developers - Leading IT Solutions & Web Development",
         description: "Discover the mission, values, and expertise of SkyTech Developers. We provide top-notch web development, cybersecurity, and IT solutions for businesses worldwide.",
-        images: ["/images/logo.png"], // Twitter also uses the logo
+        images: ["https://skytech-developers.vercel.app/images/logo.png"], // Twitter also uses the logo
     },
 };
 

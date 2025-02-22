@@ -10,7 +10,7 @@ export const metadata = {
         siteName: "SkyTech Developers",
         images: [
             {
-                url: "/images/logo.png",
+                url: "https://skytech-developers.vercel.app/images/logo.png",
                 width: 1200,
                 height: 630,
                 alt: "SkyTech Developers Logo",
@@ -23,7 +23,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "SkyTech Developers | Portfolio",
         description: "Explore our portfolio of web development, cybersecurity, and digital solutions projects, showcasing our expertise and innovative solutions.",
-        images: ["/images/logo.png"],
+        images: ["https://skytech-developers.vercel.app/images/logo.png"],
     },
 };
 

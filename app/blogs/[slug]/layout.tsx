@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
                 description: blog.excerpt || "Explore the latest articles from SkyTech Developers.",
                 url: `https://skytech-developers.vercel.app/blogs/${params.slug}`,
                 siteName: "SkyTech Developers",
-                images: blog.image ? [{ url: blog.image, width: 1200, height: 630, alt: blog.title }] : [],
+                images: blog.image ? [{ url: `https://skytech-developers.vercel.app/${blog.image}`, width: 1200, height: 630, alt: blog.title }] : [],
                 type: "article",
                 publishedTime: blog.date || new Date().toISOString(),
                 locale: "en_US",
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
                 card: "summary_large_image",
                 title: blog.title,
                 description: blog.excerpt || "Explore the latest articles from SkyTech Developers.",
-                images: blog.image ? [blog.image] : [],
+                images: blog.image ? [`https://skytech-developers.vercel.app/${blog.image}`] : ["https://skytech-developers.vercel.app/images/logo.png"],
             },
         };
     } catch (error) {

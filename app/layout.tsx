@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'SkyTech Developers - Modern Software Solutions Agency',
     description: 'Leading software development agency specializing in web development, mobile apps, UI/UX design, and cybersecurity solutions.',
-    images: ['/logo.png'],
+    images: ['https://skytech-developers.vercel.app/images/logo.png'],
   },
 };
 

@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: { service: string }
                 description: service.description || "Explore the best services provided by SkyTech Developers.",
                 url: `https://skytech-developers.vercel.app/services/${params.service}`,
                 images: [{ 
-                    url: service.image || "/images/logo.png", // ✅ Use `logo.png` as the default
+                    url: `https://skytech-developers.vercel.app/${service.image}` || "https://skytech-developers.vercel.app/images/logo.png", // ✅ Use `logo.png` as the default
                     alt: service.title 
                 }],
                 type: "website",
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: { params: { service: string }
                 card: "summary_large_image",
                 title: service.title,
                 description: service.description || "SkyTech Developers offers high-quality services.",
-                images: [service.image || "/images/logo.png"], // ✅ Use default logo if no image is provided
+                images: [`https://skytech-developers.vercel.app/${service.image}` || "https://skytech-developers.vercel.app/images/logo.png"], // ✅ Use default logo if no image is provided
             },
         };
     } catch (error) {

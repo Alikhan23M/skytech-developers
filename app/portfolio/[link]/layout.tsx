@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: { params: { link: string } })
                 url: `https://skytech-developers.vercel.app/projects/${params.link}`,
                 siteName: "SkyTech Developers",
                 images: project.image
-                    ? [{ url: project.image, width: 1200, height: 630, alt: project.title }]
-                    : [{ url: "/images/logo.png", width: 1200, height: 630, alt: "SkyTech Developers Logo" }],
+                    ? [{ url: `https://skytech-developers.vercel.app/${project.image}`, width: 1200, height: 630, alt: project.title }]
+                    : [{ url: "https://skytech-developers.vercel.app/images/logo.png", width: 1200, height: 630, alt: "SkyTech Developers Logo" }],
                 locale: "en_US",
                 type: "article",
                 publishedTime: project.date,
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: { params: { link: string } })
                 card: "summary_large_image",
                 title: project.title,
                 description: project.excerpt || "Explore the latest projects by SkyTech Developers.",
-                images: project.image ? [project.image] : ["/images/logo.png"],
+                images: project.image ? [`https://skytech-developers.vercel.app/${project.image}`] : ["https://skytech-developers.vercel.app/images/logo.png"],
             },
         };
     } catch (error) {

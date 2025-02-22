@@ -12,7 +12,7 @@ export const metadata = {
         siteName: "SkyTech Developers",
         images: [
             {
-                url: "/images/logo.png", // Using the blog.png from the public directory
+                url: "https://skytech-developers.vercel.app/images/logo.png", // Using the blog.png from the public directory
                 width: 1200,
                 height: 630,
                 alt: "SkyTech Developers Blogs",
@@ -25,7 +25,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "SkyTech Developers | Tech & Web Development Blogs",
         description: "Explore insightful blogs by SkyTech Developers covering web development, cybersecurity, software engineering, and IT solutions.",
-        images: ["/images/logo.png"], // Twitter preview image
+        images: ["https://skytech-developers.vercel.app/images/logo.png"], // Twitter preview image
     },
 };
 
