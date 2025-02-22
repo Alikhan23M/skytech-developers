@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'SkyTech Developers',
     images: [
       {
-        url: '/logo.png',
+        url: 'https://skytech-developers.vercel.app/logo.png',
         width: 1200,
         height: 630,
         alt: 'SkyTech Developers Logo',
