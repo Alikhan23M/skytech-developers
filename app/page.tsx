@@ -91,69 +91,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-20 bg-muted/50">
+{/*Featured Services Section */}
+      <section className="py-20">
         <div className="container">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            viewport={{ once: false }}
-            className="text-3xl font-bold text-center mb-12">
-           Why Choose Us?
-          </motion.h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <CheckCircle className="h-8 w-8 text-primary" />,
-                title: "High-Quality Development",
-                description:
-                  "We follow best practices and standards to deliver robust & scalable solutions.",
-              },
-              {
-                icon: <Clock className="h-8 w-8 text-primary" />,
-                title: "On-Time Delivery",
-                description:
-                  "We understand the importance of deadlines and ensure timely project completion.",
-              },
-              {
-                icon: <Zap className="h-8 w-8 text-primary" />,
-                title: "Scalable Solutions",
-                description:
-                  "Our solutions are built to grow with your business and adapt to changing needs.",
-              },
-            ].map((feature, index) => (
-
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 * index }}
-                key={index}
-                viewport={{ once: false }}
-              >
-
-                <Card
-                  key={index}
-                  className="p-6 transition-all hover:shadow-lg hover:-translate-y-1 flex flex-col justify-center"
-                >
-                  <div className="mb-4  self-center">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2 ">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
-                </Card>
-              </motion.div>
-
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/*Featured Services Section */}
-      <section className="py-20">
-        <div className="container">
-          <motion.h2
-            initial={{ opacity: 0.5, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3 }}
             viewport={{ once: false }}
 
             className="text-3xl font-bold text-center mb-12">Our Services</motion.h2>
@@ -186,9 +130,10 @@ export default function Home() {
               },
             ].map((service, index) => (
               <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 * index }}
+                key={index}
                 viewport={{ once: false }}
                 key={index}
               >
@@ -212,6 +157,69 @@ export default function Home() {
         </div>
       </section>
 
+
+
+      
+      {/* Why Choose Us Section */}
+      <section className="py-20 bg-muted/50">
+        <div className="container">
+          <motion.h2
+            initial={{ opacity: 0.5, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: false }}
+            className="text-3xl font-bold text-center mb-12">
+           Why Choose Us?
+          </motion.h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <CheckCircle className="h-8 w-8 text-primary" />,
+                title: "High-Quality Development",
+                description:
+                  "We follow best practices and standards to deliver robust & scalable solutions.",
+              },
+              {
+                icon: <Clock className="h-8 w-8 text-primary" />,
+                title: "On-Time Delivery",
+                description:
+                  "We understand the importance of deadlines and ensure timely project completion.",
+              },
+              {
+                icon: <Zap className="h-8 w-8 text-primary" />,
+                title: "Scalable Solutions",
+                description:
+                  "Our solutions are built to grow with your business and adapt to changing needs.",
+              },
+            ].map((feature, index) => (
+
+ 
+
+              
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.3 * index }}
+                viewport={{ once: false }}
+                key={index}
+              >
+
+                <Card
+                  key={index}
+                  className="p-6 transition-all hover:shadow-lg hover:-translate-y-1 flex flex-col justify-center"
+                >
+                  <div className="mb-4  self-center">{feature.icon}</div>
+                  <h3 className="text-xl font-semibold mb-2 ">{feature.title}</h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </Card>
+              </motion.div>
+
+            ))}
+          </div>
+        </div>
+      </section>
+
+      
       {/* Tech Stack Section */}
       <section className="py-20 bg-muted/50">
         <div className="container">
