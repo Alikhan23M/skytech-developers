@@ -60,7 +60,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
         <div className="prose lg:prose-lg dark:prose-dark mt-8">
           {blog.content.map((block, index) => {
             if (block.type === "paragraph")
-              return <p key={index} className="text-lg whitespace-normal break-all">{block.text}</p>;
+              return <p key={index} className="text-lg whitespace-normal">{block.text}</p>;
 
             if (block.type === "heading")
               return (
