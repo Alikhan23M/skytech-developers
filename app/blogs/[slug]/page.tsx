@@ -35,7 +35,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     const blog: Blog = JSON.parse(fileContents);
 
     return (
-      <article className="max-w-5xl mx-auto md:py-16 sm:px-6">
+      <article className="max-w-5xl mx-auto md:py-16 sm:px-6 overflow-x-hidden">
         {/* Blog Title */}
         <h1 className="mx-auto text-3xl md:text-5xl text-center font-bold text-gray-900 dark:text-white">
           {blog.title}
