@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://skytech-developers.vercel.app/</loc>
+	<lastmod>2025-02-22T19:17:53+01:00</lastmod>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://skytech-developers.vercel.app/portfolio</loc>
+	<lastmod>2025-02-22T19:17:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://skytech-developers.vercel.app/about</loc>
+	<lastmod>2025-02-22T19:17:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://skytech-developers.vercel.app/blogs</loc>
+	<lastmod>2025-02-22T19:17:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://skytech-developers.vercel.app/contact</loc>
+	<lastmod>2025-02-22T19:17:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://skytech-developers.vercel.app/services/web-development</loc>
+	<lastmod>2025-02-22T19:17:53+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://skytech-developers.vercel.app/services/mobile-development</loc>
+	<lastmod>2025-02-22T19:17:53+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://skytech-developers.vercel.app/services/ui-ux-design</loc>
+	<lastmod>2025-02-22T19:17:53+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://skytech-developers.vercel.app/services/aritificial-intelligence</loc>
+	<lastmod>2025-02-22T19:17:53+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://skytech-developers.vercel.app/services</loc>
+	<lastmod>2025-02-22T19:17:58+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
