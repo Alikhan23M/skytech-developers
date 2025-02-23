@@ -91,7 +91,10 @@ export default function Home() {
         </div>
       </section>
 
-{/*Featured Services Section */}
+      
+     
+
+      {/*Featured Services Section */}
       <section className="py-20">
         <div className="container">
           <motion.h2
@@ -130,12 +133,11 @@ export default function Home() {
               },
             ].map((service, index) => (
               <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 * index }}
-                key={index}
-                viewport={{ once: false }}
-                key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 * index }}
+              key={index}
+              viewport={{ once: false }}
               >
                 <Card
                   key={index}
@@ -158,16 +160,14 @@ export default function Home() {
       </section>
 
 
-
-      
       {/* Why Choose Us Section */}
       <section className="py-20 bg-muted/50">
         <div className="container">
           <motion.h2
-            initial={{ opacity: 0.5, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3 }}
-            viewport={{ once: false }}
+             initial={{ opacity: 0.5, scale: 0.5 }}
+             whileInView={{ opacity: 1, scale: 1 }}
+             transition={{ duration: 0.3 }}
+             viewport={{ once: false }}
             className="text-3xl font-bold text-center mb-12">
            Why Choose Us?
           </motion.h2>
@@ -193,15 +193,14 @@ export default function Home() {
               },
             ].map((feature, index) => (
 
- 
-
               
+
               <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.3 * index }}
-                viewport={{ once: false }}
-                key={index}
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 * index }}
+              viewport={{ once: false }}
+              key={index}
               >
 
                 <Card
@@ -219,7 +218,6 @@ export default function Home() {
         </div>
       </section>
 
-      
       {/* Tech Stack Section */}
       <section className="py-20 bg-muted/50">
         <div className="container">
