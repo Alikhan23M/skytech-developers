@@ -72,7 +72,7 @@ export default function BlogPage() {
                   <p className="text-muted-foreground">{project.description}</p>
                   <Button variant="link" asChild className="px-0">
                     <Link href={`/portfolio/${project.link}`}>
-                      View Project <ArrowRight className="ml-2 h-4 w-4" />
+                      View Details <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                 </div>

@@ -62,7 +62,7 @@ export default function ContactPage() {
     }
   };
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* Hero Section */}
 
       <GenralHero heading="Contact Us" para=" Have a project in mind? Let's discuss how we can help bring your vision to life." />
@@ -152,7 +152,7 @@ export default function ContactPage() {
               viewport={{ once: false }}
               transition={{ duration: 0.8 }}
               className="space-y-8">
-              <Card className="p-8">
+              <Card className="p-6 sm:p-8">
                 <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -170,7 +170,7 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6 text-primary shrink-0" />
                     <div>
                       <h3 className="font-medium">Phone</h3>
-                      <p className="text-muted-foreground hover:underline transition-colors duration-300 "><a href="tel:+923429327224">+92 342 9327224</a></p>
+                      <p className="text-muted-foreground hover:underline transition-colors duration-300 "><a className="whitespace-normal break-all" href="tel:+923429327224">+92 342 9327224</a></p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -178,7 +178,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium">Email</h3>
                       <p className="text-muted-foreground hover:underline transition-colors duration-300">
-                        <a href="mailto:skytechdevelopers.official@gmail.com">skytechdevelopers.official@gmail.com</a>
+                        <a className="whitespace-normal break-all" href="mailto:skytechdevelopers.official@gmail.com">skytechdevelopers.official@gmail.com</a>
                       </p>
                     </div>
                   </div>
@@ -229,6 +229,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

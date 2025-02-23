@@ -9,7 +9,7 @@ import {
   Code2,
   Smartphone,
   Palette,
-  Shield,
+  Brain,
   CheckCircle,
   Clock,
   Zap,
@@ -179,7 +179,7 @@ export default function Home() {
                 href: "/services/ui-ux-design",
               },
               {
-                icon: <Shield className="h-8 w-8" />,
+                icon: <Brain className="h-8 w-8" />,
                 title: "Artificial Intelligence",
                 description: "Comprehensive AI solutions for your business.",
                 href: "/services/aritificial-intelligence",
