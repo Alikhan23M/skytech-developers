@@ -71,7 +71,7 @@ export default function AboutPage() {
           className="text-3xl font-bold mb-12">Our Team</motion.h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[{ name: "Ali Khan", role: "Founder & CEO", img: "/images/profiles/ali.jpg" },
-             { name: "Humais Ali", role: "Design Director", img: "/images/profiles/humais.jpg" },
+             { name: "Humais Ali", role: "Co-Founder", img: "/images/profiles/humais.jpg" },
             { name: "Yasir Riaz", role: " Brand Ambassador ", img: "/images/profiles/yasir.JPG" }].map((member, index) => (
               <motion.div
                 key={index}
